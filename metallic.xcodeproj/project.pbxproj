@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53C481A213D8AED0026C4AC /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = B53C4819213D8AED0026C4AC /* Shaders.metal */; };
+		B53C4821213D91620026C4AC /* Matrix4.m in Sources */ = {isa = PBXBuildFile; fileRef = B53C4820213D91610026C4AC /* Matrix4.m */; };
+		B53C4823213D91E40026C4AC /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C4822213D91E40026C4AC /* Vertex.swift */; };
+		B53C4825213D92380026C4AC /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C4824213D92380026C4AC /* Node.swift */; };
+		B53C4827213D964C0026C4AC /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C4826213D964C0026C4AC /* Triangle.swift */; };
 		B5CC0287213D81CF00CB0BA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC0286213D81CF00CB0BA6 /* AppDelegate.swift */; };
 		B5CC0289213D81CF00CB0BA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC0288213D81CF00CB0BA6 /* ViewController.swift */; };
 		B5CC028C213D81CF00CB0BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CC028A213D81CF00CB0BA6 /* Main.storyboard */; };
@@ -15,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53C4819213D8AED0026C4AC /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		B53C481E213D90D20026C4AC /* metallic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "metallic-Bridging-Header.h"; sourceTree = "<group>"; };
+		B53C481F213D91610026C4AC /* Matrix4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matrix4.h; sourceTree = "<group>"; };
+		B53C4820213D91610026C4AC /* Matrix4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Matrix4.m; sourceTree = "<group>"; };
+		B53C4822213D91E40026C4AC /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		B53C4824213D92380026C4AC /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		B53C4826213D964C0026C4AC /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		B5CC0283213D81CF00CB0BA6 /* metallic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metallic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CC0286213D81CF00CB0BA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5CC0288213D81CF00CB0BA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,11 +67,18 @@
 			isa = PBXGroup;
 			children = (
 				B5CC0286213D81CF00CB0BA6 /* AppDelegate.swift */,
+				B53C4822213D91E40026C4AC /* Vertex.swift */,
+				B53C4824213D92380026C4AC /* Node.swift */,
+				B53C4826213D964C0026C4AC /* Triangle.swift */,
 				B5CC0288213D81CF00CB0BA6 /* ViewController.swift */,
+				B53C481F213D91610026C4AC /* Matrix4.h */,
+				B53C4820213D91610026C4AC /* Matrix4.m */,
+				B53C4819213D8AED0026C4AC /* Shaders.metal */,
 				B5CC028A213D81CF00CB0BA6 /* Main.storyboard */,
 				B5CC028D213D81D000CB0BA6 /* Assets.xcassets */,
 				B5CC028F213D81D000CB0BA6 /* LaunchScreen.storyboard */,
 				B5CC0292213D81D000CB0BA6 /* Info.plist */,
+				B53C481E213D90D20026C4AC /* metallic-Bridging-Header.h */,
 			);
 			path = metallic;
 			sourceTree = "<group>";
@@ -135,7 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53C481A213D8AED0026C4AC /* Shaders.metal in Sources */,
+				B53C4821213D91620026C4AC /* Matrix4.m in Sources */,
 				B5CC0289213D81CF00CB0BA6 /* ViewController.swift in Sources */,
+				B53C4825213D92380026C4AC /* Node.swift in Sources */,
+				B53C4823213D91E40026C4AC /* Vertex.swift in Sources */,
+				B53C4827213D964C0026C4AC /* Triangle.swift in Sources */,
 				B5CC0287213D81CF00CB0BA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bengovernment.metallicplayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bengovernment.metallicplayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
