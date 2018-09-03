@@ -10,6 +10,9 @@ import UIKit
 import Metal
 
 class ViewController: UIViewController {
+	
+	var device: MTLDevice!
+	
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
