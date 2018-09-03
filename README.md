@@ -4,4 +4,4 @@
 Let's draw a triangle
 
 
-![triangle render example](https://raw.githubusercontent.com/bengovernment/metallic/master/triangle-example.png)
+![triangle render example](https://github.com/bengovernment/metallic/blob/master/triangle-example.jpeg)
